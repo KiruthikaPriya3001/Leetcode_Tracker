@@ -1,0 +1,13 @@
+// Last updated: 9/21/2026, 2:23:52 PM
+class Solution {
+    public int countKeyChanges(String s) {
+        int c = 0;
+        s = s.toLowerCase();
+        for(int i=0;i<s.length()-1;i++){
+            if(s.charAt(i)!=s.charAt(i+1)){
+                c++;
+            }
+        }
+        return c;
+    }
+}
